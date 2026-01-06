@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ScentAura — Contact</title>
+<link href="styles.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand"><div class="logo">SA</div><div style="font-size:14px;color:var(--muted)">ScentAura</div></div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="card">
+        <h2>Contact Us</h2>
+        <p style="color:var(--muted)">Send us a message — we'll respond within 48 hours.</p>
+        <div style="margin-top:12px;" class="contact-form">
+          <input placeholder="Your name" />
+          <div style="height:8px"></div>
+          <input placeholder="Email" />
+          <div style="height:8px"></div>
+          <textarea rows="6" placeholder="Message"></textarea>
+          <div style="height:12px"></div>
+          <button class="btn">Send Message</button>
+        </div>
+      </section>
+
+      <section style="margin-top:14px">
+        <div class="card">
+          <h4>Visit or Email</h4>
+          <p style="color:var(--muted)">Email: info@scentaura.example <br> Phone: +1 (555) 123-4567</p>
+        </div>
+      </section>
+
+      <footer style="margin-top:18px;color:var(--muted);text-align:center">© <span id="yr4"></span> ScentAura</footer>
+    </main>
+  </div>
+<script>document.getElementById('yr4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

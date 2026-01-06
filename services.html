@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ScentAura — Services</title>
+<link href="styles.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+  <nav class="nav">
+    <div class="brand"><div class="logo">SA</div><div style="font-size:14px;color:var(--muted)">ScentAura</div></div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Our Services</h2>
+      <p style="color:var(--muted);margin-top:8px">We offer services to make gifting and buying perfumes easy and memorable.</p>
+    </section>
+
+    <section style="margin-top:16px" class="grid">
+      <div class="card">
+        <h4>Gift Wrapping</h4>
+        <p style="color:var(--muted)">Premium eco-friendly packaging and personalized notes.</p>
+      </div>
+      <div class="card">
+        <h4>Samples</h4>
+        <p style="color:var(--muted)">Try sample vials before buying full bottles.</p>
+      </div>
+      <div class="card">
+        <h4>Fast Shipping</h4>
+        <p style="color:var(--muted)">Reliable delivery with tracking.</p>
+      </div>
+      <div class="card">
+        <h4>Corporate Orders</h4>
+        <p style="color:var(--muted)">Bulk orders, custom branding, and events.</p>
+      </div>
+    </section>
+
+    <footer style="margin-top:20px;color:var(--muted);text-align:center">© <span id="yr3"></span> ScentAura</footer>
+  </main>
+ </div>
+<script>document.getElementById('yr3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ScentAura — Home</title>
+<link href="styles.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">SA</div>
+        <div>
+          <div style="font-size:14px;color:var(--muted)">ScentAura</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Premium Perfumes</div>
+        </div>
+      </div>
+      <div class="navlinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero card">
+        <div>
+          <h1>Welcome to ScentAura</h1>
+          <p>Your online destination for premium men’s and women’s perfumes — handcrafted scents that tell your story.</p>
+          <div style="margin-top:14px;">
+            <a class="btn" href="products.html">Explore Products</a>
+          </div>
+        </div>
+        <div class="card" style="background:transparent;padding:12px;">
+          <strong>About Us</strong>
+          <p style="color:var(--muted);margin-top:8px;font-size:14px;">
+            ScentAura curates high-quality perfumes inspired by nature and modern elegance. We use sustainable packaging and focus on memorable scent profiles.
+          </p>
+        </div>
+      </section>
+
+      <section style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p style="color:var(--muted)">To craft accessible premium fragrances that empower self-expression and create lasting memories.</p>
+        </div>
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p style="color:var(--muted)">To become the go-to brand for signature scents that respect people and planet.</p>
+        </div>
+      </section>
+
+      <section style="margin-top:18px;">
+        <div class="card">
+          <h3>Featured</h3>
+          <div class="grid" style="margin-top:12px;">
+            <div class="product">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Perfume 1">
+              <h4>Ocean Whisper — Women</h4>
+              <div class="price">$49</div>
+            </div>
+            <div class="product">
+              <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Perfume 2">
+              <h4>Midnight Cedar — Men</h4>
+              <div class="price">$59</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© <span id="yr"></span> ScentAura • All rights reserved</p>
+      </footer>
+    </main>
+  </div>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
